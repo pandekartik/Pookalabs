@@ -1,9 +1,7 @@
 ---
 const pageTitle = "Home"
 import "../styles/global.css"
-import { Image } from '@astrojs/image/components';
-import logo from "../assets/logo.png";
-
+import Navbar from "../components/Navbar.astro";
 ---
 
 <html lang="en">
@@ -15,24 +13,15 @@ import logo from "../assets/logo.png";
 		<title>Pooka Labs | {pageTitle}</title>
 	</head>
 	<body>
-		<header class="px-5 py-20 md:px-10 bg-right-top bg-fixed bg-hero-bg bg-no-repeat md:bg-cover h-screen lg:px-20 align-middle ">
-			<nav class="flex flex-row w-full justify-between">
-				<div>
-					<Image src={logo} width={120} alt="Pooka Labs Logo" />
+		<header class="px-5 py-20 md:px-10 bg-fixed bg-hero-bg bg-no-repeat bg-top bg-cover h-screen lg:px-20 align-middle flex flex-col justify-between ">
+			<Navbar />
+			<div class="max-w-2xl">
+				<div class="flex flex-col gap-y-6">
+					<h1 class="text-4xl text-white">Transforming Your Digital Vision into Reality</h1>
+					<p class="text-2xl text-white">We are a team of expert designers and developers who create beautiful, memorable brands and profitable digital experiences for businesses and startups.</p>
+					<button class="px-6 py-2 rounded bg-white text-black w-40 hover:bg-black hover:text-white ease-in-out duration-300">Get in touch</button>
 				</div>
-				<!-- <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="36" height="36" fill="white" class="cursor-pointer"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
-				<svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="36" height="36" fill="white" class="cursor-pointer"><path d="M23.707.293h0a1,1,0,0,0-1.414,0L12,10.586,1.707.293a1,1,0,0,0-1.414,0h0a1,1,0,0,0,0,1.414L10.586,12,.293,22.293a1,1,0,0,0,0,1.414h0a1,1,0,0,0,1.414,0L12,13.414,22.293,23.707a1,1,0,0,0,1.414,0h0a1,1,0,0,0,0-1.414L13.414,12,23.707,1.707A1,1,0,0,0,23.707.293Z"/></svg> -->
-				<div>
-					<ul class="flex flex-row gap-x-20">
-						<li>
-							<a class="text-white text-xl" href="#">Studio</a>
-						</li>
-						<li>
-							<a class="text-white text-xl" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+			</div>
 		</header>
 	</body>
 </html>
