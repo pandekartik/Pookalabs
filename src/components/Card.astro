@@ -1,3 +1,18 @@
 ---
-
+const {heading,body,imageUrl, logoUrl, projectUrl} = Astro.props
 ---
+<div class="p-4 lg:p-6 rounded-3xl bg-white flex gap-x-6 items-stretch">
+    <div>
+        <img src={`/assets/projects/${imageUrl}.png`} alt="" class="rounded-3xl w-80">
+    </div>
+    <div class="flex flex-col justify-around">
+        <img src={`/assets/clients/${logoUrl}.png`} class="max-w-[90px] lg:max-w-[120px]">
+        <div>
+            <h2 class="text-xl font-bold">{heading}</h2>
+            <p class="text-sm pt-1">{body}</p>
+        </div>
+        <div class="border-2 border-black text-center px-6 py-2 rounded bg-black text-white w-40 hover:bg-white hover:text-black hover:border ease-in-out duration-300">
+            <a href={`/${projectUrl}/`} target="_blank" rel="noopener noreferrer">Read More</a>
+        </div>
+    </div>
+</div>

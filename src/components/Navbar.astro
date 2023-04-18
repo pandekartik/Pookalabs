@@ -2,19 +2,19 @@
 import { Image } from '@astrojs/image/components';
 import logo from "../assets/logo.svg";
 ---
-<nav class="flex flex-row w-full justify-between">
+<nav class="flex flex-row w-full justify-between px-5 py-5 md:px-10 lg:px-20 items-center ">
     <div>
-        <Image src={logo} width={120} alt="Pooka Labs Logo" />
+        <a href="/">
+            <Image src={logo} width={120} alt="Pooka Labs Logo" />
+        </a>
     </div>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="36" height="36" fill="white" class="cursor-pointer"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
-    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="36" height="36" fill="white" class="cursor-pointer"><path d="M23.707.293h0a1,1,0,0,0-1.414,0L12,10.586,1.707.293a1,1,0,0,0-1.414,0h0a1,1,0,0,0,0,1.414L10.586,12,.293,22.293a1,1,0,0,0,0,1.414h0a1,1,0,0,0,1.414,0L12,13.414,22.293,23.707a1,1,0,0,0,1.414,0h0a1,1,0,0,0,0-1.414L13.414,12,23.707,1.707A1,1,0,0,0,23.707.293Z"/></svg> -->
     <div>
         <ul class="flex flex-row gap-x-4 lg:gap-x-20">
             <li>
-                <a class="text-white text-xl hover:font-bold ease-in-out duration-200" href="#">Studio</a>
+                <a class="text-black text-xl hover:font-bold ease-in-out duration-200" href="/about/">Studio</a>
             </li>
             <li>
-                <a class="text-white text-xl hover:font-bold ease-in-out duration-200" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
+                <a class="text-black text-xl hover:font-bold ease-in-out duration-200" href="#" target="_blank" rel="noopener noreferrer">Contact</a>
             </li>
         </ul>
     </div>

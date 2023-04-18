@@ -1,0 +1,47 @@
+---
+import Card from "./Card.astro";
+const projects = [
+    {
+    heading: "Neutron AR/AP Solution",
+    body: 'Logo, Branding and Digital Product Design',
+    imageUrl: 'neutron',
+    logoUrl : "9",
+    projectUrl : "neutron",
+  },
+  {
+    heading: "GuideMeDoc",
+    body: 'UX/UI Design and Digital Product Design',
+    imageUrl: 'guidemedoc',
+    logoUrl : "guidemedoc",
+    projectUrl : "guidemedoc",
+  },
+  {
+    heading: "Logofolio",
+    body: 'Some of our latest logo designs',
+    imageUrl: 'logofolio',
+    logoUrl : "",
+    projectUrl : "logofolio",
+  },
+  {
+    heading: "SPC Website",
+    body: 'UX/UI Design & Web Development',
+    imageUrl: 'spc',
+    logoUrl : "8",
+    projectUrl : "spc",
+  },
+  {
+    heading: "BagAChats",
+    body: 'Wordpress Web Development',
+    imageUrl: 'bagachat',
+    logoUrl : "11",
+    projectUrl : "bagachat",
+  },
+]
+---
+<div class="bg-project-bg bg-no-repeat bg-top bg-cover px-5 py-12 md:px-10 lg:px-20 lg:py-48">
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-9 gap-y-9">
+        {projects.map((project)=>(
+            <Card heading={project.heading} body={project.body} imageUrl={project.imageUrl} logoUrl={project.logoUrl} projectUrl={project.projectUrl} />
+        ))}
+    </div>
+</div>
