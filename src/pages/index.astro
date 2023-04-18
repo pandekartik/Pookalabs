@@ -2,6 +2,7 @@
 const pageTitle = "Home"
 import "../styles/global.css"
 import Header from "../components/Header.astro";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -14,5 +15,35 @@ import Header from "../components/Header.astro";
 	</head>
 	<body>
 		<Header />
+		<div class="p-5 md:p-10 lg:p-48">
+			<div>
+				<div>
+					<p>Studio</p>
+					<h2>Creating profitable digital experiences and memorable brands. Our experts help business owners and startups.</h2>
+				</div>
+				<div class="border-2 border-black text-center px-6 py-2 rounded bg-black text-white w-40 hover:bg-white hover:text-black hover:border ease-in-out duration-300">
+					<a href="#" target="_blank" rel="noopener noreferrer">Know More</a>
+				</div>
+			</div>
+			<div>
+				<div class="flex flex-col">
+					<p class="text-center">Trusted by leading businesses and startup founders across industries</p>
+					<div class="grid grid-cols-2 gap-x-10 lg:grid-cols-6 lg:gap-x-20 lg:gap-y-6">
+						<img src="/assets/clients/1.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/2.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/3.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/4.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/5.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/6.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/7.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/8.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/9.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/10.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/11.png" alt="" class="grayscale brightness-0">
+						<img src="/assets/clients/12.png" alt="" class="grayscale brightness-0">
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
