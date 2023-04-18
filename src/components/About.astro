@@ -1,7 +1,7 @@
 ---
 const clients = [1,2,3,4,5,6,7,8,9,10,11,12];
 ---
-<div class="p-5 md:p-10 lg:p-48">
+<div class="px-10 py-20 md:px-20 py-30 lg:p-48">
     <div>
         <div>
             <p>Studio</p>
@@ -12,11 +12,11 @@ const clients = [1,2,3,4,5,6,7,8,9,10,11,12];
         </div>
     </div>
     <div>
-        <div class="flex flex-col">
+        <div class="flex flex-col gap-y-9">
             <p class="text-center">Trusted by leading businesses and startup founders across industries</p>
-            <div class="grid grid-cols-3 gap-x-10 items-center justify-center justify-items-center	 lg:grid-cols-6 lg:gap-x-20 lg:gap-y-6">
+            <div class="grid grid-cols-2 justify-center justify-items-center items-center gap-8 lg:grid-cols-6 lg:gap-x-20 lg:gap-y-12">
                 {clients.map((client)=>(
-                    <img src={`/assets/clients/${client}.png`} alt="" class="max-w-[60px] lg:max-w-[120px]">
+                    <img src={`/assets/clients/${client}.png`} alt="" class="max-w-[90px] lg:max-w-[120px]">
                 ))}
             </div>
         </div>
