@@ -1,20 +1,29 @@
 ---
 const pageTitle = "Home"
-import "../styles/global.css"
+import BaseLayout from "../layouts/BaseLayout.astro";
 import Header from "../components/Header.astro";
 import About from "../components/About.astro";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Pooka Labs | {pageTitle}</title>
-	</head>
-	<body>
-		<Header />
-		<About />
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<Header />
+	<About />
+		<div class="bg-project-bg bg-no-repeat bg-top bg-cover px-5 py-16 lg:px-48 lg:py-32">
+			<div class="grid grid-cols-1">
+				<div class="p-4 lg:p-6 rounded-3xl bg-white flex gap-x-9">
+					<div>
+						<img src="/assets/projects/logofolio.png" alt="" class="rounded-3xl w-80">
+					</div>
+					<div>
+						<img src="/assets/clients/9.png" class="max-w-[90px] lg:max-w-[120px]">
+						<div>
+							<h2>Neutron AR/AP Solution</h2>
+							<p>Logo, Branding and Digital Product Design</p>
+						</div>
+						<div class="border-2 border-black text-center px-6 py-2 rounded bg-black text-white w-40 hover:bg-white hover:text-black hover:border ease-in-out duration-300">
+							<a href="#" target="_blank" rel="noopener noreferrer">Know More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</BaseLayout>
