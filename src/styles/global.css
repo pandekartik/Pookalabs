@@ -1,0 +1,6 @@
+@import url('../styles/satoshi.css');
+
+body{
+    font-family: 'Satoshi-Variable', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
