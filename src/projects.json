@@ -1,27 +1,47 @@
 [
     {
-        "heading": "Neutron AR/AP Solution",
-        "body": "Logo, Branding and Digital Product Design",
-        "imageUrl": "neutron"
+        "heading": "Caff.",
+        "body": "Logo design for a coffee brand",
+        "imageUrl": "caff"
       },
       {
-        "heading": "GuideMeDoc",
-        "body": "UX/UI Design and Digital Product Design",
-        "imageUrl": "guidemedoc"
+        "heading": "Caff. Cans",
+        "body": "Branding and packaging for Caff.",
+        "imageUrl": "caffbranding"
       },
       {
-        "heading": "Logofolio",
-        "body": "Some of our latest logo designs",
-        "imageUrl": "logofolio"
+        "heading": "Folia",
+        "body": "Logo design for an online plants shop",
+        "imageUrl": "folia"
       },
       {
-        "heading": "SPC Website",
-        "body": "UX/UI Design & Web Development",
-        "imageUrl": "spc"
+        "heading": "Fresh Squeeze",
+        "body": "Logo design for an organic cold press juice brand",
+        "imageUrl": "fresh"
       },
       {
-        "heading": "BagAChats",
-        "body": "Wordpress Web Development",
-        "imageUrl": "bagachat"
-      } 
+        "heading": "MD Stoneimpex",
+        "body": "Logo design for a European importer",
+        "imageUrl": "md"
+      },
+      {
+        "heading": "Oliver Ceramic",
+        "body": "Logo design for a local creamic store",
+        "imageUrl": "oliver"
+      },
+      {
+        "heading": "Next Door Properties",
+        "body": "Logo design for US real eastate firm",
+        "imageUrl": "nextdoor"
+      },
+      {
+        "heading": "Nuvora",
+        "body": "Logo design for a fashion brand",
+        "imageUrl": "nuvora"
+      },
+      {
+        "heading": "Renaissance Derma",
+        "body": "Logo design for a local dermatology clinic",
+        "imageUrl": "renaissance"
+      }
 ]
