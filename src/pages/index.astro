@@ -46,11 +46,42 @@ const projects = [
 	<!-- head start -->
 	<head>
 		<meta charset="utf-8" />
+		<SEO
+      title="Pooka Labs Design Studio - Innovative Accessibility-First UX/UI Design"
+      description="Pooka Labs Design Studio is an innovative accessibility-first UX/UI design studio that specializes in logo and branding, digital product design, social media marketing, and website development. Our user-centered approach ensures that every project we undertake is tailored to the specific needs of our clients and their customers. We combine cutting-edge design techniques with a deep understanding of user behavior to create engaging and accessible digital experiences that delight and inspire. With Pooka Labs, you can be sure that your design project is in the hands of experts who are passionate about delivering exceptional results. Relevant tags: UX/UI Design, Logo Design, Branding, Digital Product Design, Social Media Marketing, Website Development, User-Centered Design, Accessibility-First Design."
+	  charset="utf-8"
+      openGraph={{
+        basic: {
+          title: "Pooka Labs Design Studio - Innovative Accessibility-First UX/UI Design",
+          type: "A type.",
+          image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+        },
+		optional:{
+			description : "Pooka Labs Design Studio is an innovative accessibility-first UX/UI design studio that specializes in logo and branding, digital product design, social media marketing, and website development."
+		}
+      }}
+      twitter={{
+        creator: "@pookalabsdesign"
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.svg" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+          },
+          { name: "twitter:title", content: "Pooka Labs Design Studio - Innovative Accessibility-First UX/UI Design" },
+          { name: "twitter:description", content: "Pooka Labs Design Studio is an innovative accessibility-first UX/UI design studio that specializes in logo and branding, digital product design, social media marketing, and website development." },
+        ],
+      }}
+    />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="sitemap" href="/sitemap-index.xml">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<script type="text/javascript">
+		<script type="text/partytown">
 			(function(c,l,a,r,i,t,y){
 				c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
 				t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -155,6 +186,7 @@ const projects = [
 			<div class="flex flex-row gap-x-12 pt-10 lg:flex-col lg:gap-y-4 lg:pt-0">
 				<a href="https://www.instagram.com/pookalabsdesign/" target="_blank" rel="noopener noreferrer" class="text-md lg:text-xl"> Instagram</a>
 				<a href="https://www.linkedin.com/company/pookalabsdesign" target="_blank" rel="noopener noreferrer" class="text-md lg:text-xl">LinkedIn</a>
+				<a href="https://twitter.com/pookalabsdesign" target="_blank" rel="noopener noreferrer" class="text-md lg:text-xl">Twitter</a>
 				<a href="https://dribbble.com/pookalabsdesign" target="_blank" rel="noopener noreferrer" class="text-md lg:text-xl">Dribbble</a>
 			</div>
 		</div>
