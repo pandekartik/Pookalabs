@@ -3,7 +3,7 @@ import { Image } from '@astrojs/image/components';
 import logo from "../assets/logo.svg";
 ---
 <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:items-start px-10 py-20 md:px-10 lg:px-20 lg:py-20">
-    <div>
+    <div class="pb-16">
         <a href="/">
             <Image src={logo} width={140} alt="Pooka Labs Logo" />
         </a>
@@ -15,7 +15,7 @@ import logo from "../assets/logo.svg";
         </div>
         <p class="text-md lg:text-2xl ">Join Us <a href="mailto:jobs@pookalabs.com" class="underline">jobs@pookalabs.com</a></p>
 </div>
-    <div class="flex flex-row gap-x-12 pt-10 lg:flex-col lg:gap-y-4">
+    <div class="flex flex-row gap-x-12 pt-10 lg:flex-col lg:gap-y-4 lg:pt-0">
         <a href="https://www.instagram.com/pookalabsdesign/" target="_blank" rel="noopener noreferrer" class="text-md lg:text-xl"> Instagram</a>
         <a href="https://www.linkedin.com/company/pookalabsdesign" target="_blank" rel="noopener noreferrer" class="text-md lg:text-xl">LinkedIn</a>
         <a href="https://dribbble.com/pookalabsdesign" target="_blank" rel="noopener noreferrer" class="text-md lg:text-xl">Dribbble</a>
