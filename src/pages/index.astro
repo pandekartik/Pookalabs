@@ -44,6 +44,7 @@ import projects from "../projects.json"
 		<h2 class="text-xl lg:text-4xl text-white text-center">Some of recent our projects</h2>
 		<div class="grid grid-cols-1 gap-x-4 gap-y-8 justify-items-strech items-strech lg:grid-cols-3">
 			{projects.slice(0, 6).map((project)=>(
+				<a class="bg-white p-5 rounded-xl " href={project.url} target="_blank" rel="noopener noreferrer" >
 				<div class="bg-white p-5 rounded-xl ">
 					<img src={`/assets/projects/${project.imageUrl}.png`} alt={project.heading+" "+project.body} class="rounded-md">
 					<div class="pt-4" >
@@ -51,6 +52,7 @@ import projects from "../projects.json"
 						<p class="text-sm pt-1">{project.body}</p>
 					</div>
 				</div>
+			</a>
 			))}
         </div>
 		<div class="border-2 border-white text-center px-6 py-2 rounded bg-white text-black w-40 hover:bg-black hover:text-white hover:border ease-in-out duration-300">
