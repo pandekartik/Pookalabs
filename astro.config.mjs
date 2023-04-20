@@ -10,5 +10,7 @@ import compress from "astro-compress";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://pookalabs.com',
-  integrations: [tailwind(), partytown(), image(), sitemap(), robotsTxt(), compress()]
+  integrations: [tailwind(), partytown(), image(), sitemap(), robotsTxt(), compress({
+    path: ["./build", "./dist"]
+  })]
 });
