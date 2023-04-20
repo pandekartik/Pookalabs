@@ -4,8 +4,8 @@ import partytown from "@astrojs/partytown";
 import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 import robotsTxt from "astro-robots-txt";
-
 import compress from "astro-compress";
+
 
 // https://astro.build/config
 export default defineConfig({

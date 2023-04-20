@@ -10,6 +10,12 @@
         "imageUrl": "caffbranding"
       },
       {
+        "heading": "Swapnil Patni Classes",
+        "body": "Website design and development for local coaching classes. Click to view",
+        "imageUrl": "spc",
+        "url" : "https://www.swapnilpatni.com/"
+      },
+      {
         "heading": "Folia",
         "body": "Logo design for an online plants shop",
         "imageUrl": "folia"
@@ -18,6 +24,12 @@
         "heading": "Fresh Squeeze",
         "body": "Logo design for an organic cold press juice brand",
         "imageUrl": "fresh"
+      },
+      {
+        "heading": "BagAChat",
+        "body": "Website design and development for Startup. Click to view",
+        "imageUrl": "bagachat",
+        "url" : "https://bagachat.com/"
       },
       {
         "heading": "MD Stoneimpex",
@@ -30,6 +42,12 @@
         "imageUrl": "oliver"
       },
       {
+        "heading": "The Socialicious",
+        "body": "Website design and development for a Dubai based Digital Agency. Click to view",
+        "imageUrl": "socialicious",
+        "url" : "https://www.thesocialicious.com/"
+      },
+      {
         "heading": "Next Door Properties",
         "body": "Logo design for US real eastate firm",
         "imageUrl": "nextdoor"
@@ -40,8 +58,24 @@
         "imageUrl": "nuvora"
       },
       {
+        "heading": "Umesh Chopkar",
+        "body": "Website design and development for a Insurance Agent. Click to view",
+        "imageUrl": "umesh",
+        "url" : "https://pandekartik.github.io/www.umeshchopkar.com/"
+      },
+      {
         "heading": "Renaissance Derma",
         "body": "Logo design for a local dermatology clinic",
         "imageUrl": "renaissance"
+      },
+      {
+        "heading": "Plums & Carols Logo",
+        "body": "Logo design for a side project in christmas",
+        "imageUrl": "plums"
+      },
+      {
+        "heading": "Plums & Carols Packaging",
+        "body": "Branding and Packaging design for a side project in christmas",
+        "imageUrl": "plumbranding"
       }
 ]
