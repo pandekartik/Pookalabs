@@ -1,0 +1,13 @@
+---
+const { heading,body, imageUrl, url } = Astro.props
+---
+<div class="bg-white p-5 rounded-xl">
+    <img src={`/assets/projects/${imageUrl}.png`} alt={heading+" "+body} class="rounded-md">
+    <div class="pt-4" >
+        <h2 class="text-xl font-bold">{heading}</h2>
+        <p class="text-sm pt-1">{body}</p>
+        {url && (
+            <a href={url} target="_blank" class="text-sm pt-2 underline font-bold ">Visit Website</a>
+        )}
+    </div>
+</div>

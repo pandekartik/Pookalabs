@@ -1,13 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const clients = [1,2,3,4,5,6,7,8,9,10,11,12];
-import projects from "../projects.json"
+import Cards from "../components/Cards.astro";
+import clients from '../data/clients.json'
+import projects from "../data/projects.json"
 ---
 <BaseLayout>
 	<!-- hero start -->
 		<header class="px-5 py-10 md:px-10 lg:px-20 bg-hero-bg bg-no-repeat bg-cover h-screen bg-top flex flex-row text-center justify-center justify-items-center items-center">
-			<div class="max-w-2xl flex flex-col gap-y-10 align-middle items-center">
-				<h1 class="text-2xl lg:text-4xl text-white">Transforming Your Digital Vision into Reality</h1>
+			<div class="max-w-3xl flex flex-col gap-y-10 align-middle items-center">
+				<h1 class="text-3xl lg:text-6xl lg:leading-[5.5rem] text-white font-bold">Transforming Your Digital Vision into Reality</h1>
 				<p class="text-xl lg:text-2xl text-white">We are a team of expert designers and developers who create beautiful, memorable brands and profitable digital experiences for businesses and startups.</p>
 				<div class="border-2 border-white text-center px-6 py-2 rounded bg-white text-black w-40 hover:bg-black hover:text-white hover:border ease-in-out duration-300">
 					<a href="/contact/">Get in touch</a>
@@ -31,7 +32,7 @@ import projects from "../projects.json"
 				<p class="text-center text-lg">Trusted by leading businesses and startup founders across industries</p>
 				<div class="grid grid-cols-3 justify-center justify-items-center items-center gap-8 lg:grid-cols-6 lg:gap-x-20 lg:gap-y-12">
 					{clients.map((client)=>(
-						<img src={`/assets/clients/${client}.png`} alt="client" class="max-w-[90px] lg:max-w-[120px]">
+						<img src={`/assets/clients/${client.logo}.png`} alt={client.name} class="max-w-[90px] lg:max-w-[120px]">
 					))}
 				</div>
 			</div>
@@ -42,17 +43,9 @@ import projects from "../projects.json"
 	<div class="bg-project-bg bg-no-repeat bg-top bg-cover px-5 py-12 md:px-10 lg:px-20 lg:py-32 ">
 		<div class="flex flex-col items-center gap-y-12">
 		<h2 class="text-xl lg:text-4xl text-white text-center">Some of recent our projects</h2>
-		<div class="grid grid-cols-1 gap-x-4 gap-y-8 justify-items-strech items-strech lg:grid-cols-3">
+		<div class="grid grid-cols-1 gap-x-4 gap-y-8 justify-items-strech items-strech md:grid-cols-2 lg:grid-cols-3">
 			{projects.slice(0, 6).map((project)=>(
-				<a class="bg-white p-5 rounded-xl " href={project.url} target="_blank" rel="noopener noreferrer" >
-				<div class="bg-white p-5 rounded-xl ">
-					<img src={`/assets/projects/${project.imageUrl}.png`} alt={project.heading+" "+project.body} class="rounded-md">
-					<div class="pt-4" >
-						<h2 class="text-xl font-bold">{project.heading}</h2>
-						<p class="text-sm pt-1">{project.body}</p>
-					</div>
-				</div>
-			</a>
+				<Cards heading={project.heading} body={project.body} imageUrl={project.imageUrl} url={project.url} />
 			))}
         </div>
 		<div class="border-2 border-white text-center px-6 py-2 rounded bg-white text-black w-40 hover:bg-black hover:text-white hover:border ease-in-out duration-300">

@@ -1,19 +1,27 @@
 [
-    {
-        "heading": "Caff.",
-        "body": "Logo design for a coffee brand",
-        "imageUrl": "caff"
-      },
-      {
-        "heading": "Caff. Cans",
-        "body": "Branding and packaging for Caff.",
-        "imageUrl": "caffbranding"
-      },
       {
         "heading": "Swapnil Patni Classes",
-        "body": "Website design and development for local coaching classes. Click to view",
+        "body": "Website design and development for local coaching classes.",
         "imageUrl": "spc",
         "url" : "https://www.swapnilpatni.com/"
+      },
+      {
+        "heading": "BagAChat",
+        "body": "Website design and development for Startup.",
+        "imageUrl": "bagachat",
+        "url" : "https://bagachat.com/"
+      },
+      {
+        "heading": "The Socialicious",
+        "body": "Website design and development for a Dubai based Digital Agency.",
+        "imageUrl": "socialicious",
+        "url" : "https://www.thesocialicious.com/"
+      },
+      {
+        "heading": "Umesh Chopkar",
+        "body": "Website design and development for a Insurance Agent.",
+        "imageUrl": "umesh",
+        "url" : "https://pandekartik.github.io/www.umeshchopkar.com/"
       },
       {
         "heading": "Folia",
@@ -26,12 +34,6 @@
         "imageUrl": "fresh"
       },
       {
-        "heading": "BagAChat",
-        "body": "Website design and development for Startup. Click to view",
-        "imageUrl": "bagachat",
-        "url" : "https://bagachat.com/"
-      },
-      {
         "heading": "MD Stoneimpex",
         "body": "Logo design for a European importer",
         "imageUrl": "md"
@@ -42,12 +44,6 @@
         "imageUrl": "oliver"
       },
       {
-        "heading": "The Socialicious",
-        "body": "Website design and development for a Dubai based Digital Agency. Click to view",
-        "imageUrl": "socialicious",
-        "url" : "https://www.thesocialicious.com/"
-      },
-      {
         "heading": "Next Door Properties",
         "body": "Logo design for US real eastate firm",
         "imageUrl": "nextdoor"
@@ -56,12 +52,6 @@
         "heading": "Nuvora",
         "body": "Logo design for a fashion brand",
         "imageUrl": "nuvora"
-      },
-      {
-        "heading": "Umesh Chopkar",
-        "body": "Website design and development for a Insurance Agent. Click to view",
-        "imageUrl": "umesh",
-        "url" : "https://pandekartik.github.io/www.umeshchopkar.com/"
       },
       {
         "heading": "Renaissance Derma",
