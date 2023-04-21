@@ -1,87 +1,50 @@
 ---
 import { Alpine } from "alpinejs";
+import CardGrid from "./CardGrid.astro";
 ---
 
+
 <section>
-    <div class="items-center px-8 mx-auto max-w-7xl lg:px-16 md:px-12">
-      <div class="justify-center w-full lg:p-10 max-auto">
-        <div x-data="{ tab: 'tab1' }">
-          <ul class="grid grid-cols-3 mx-auto text-sm text-center text-black border-b">
-            <li class="w-full -mb-px">
-              <!-- event handler set state to 'tab1' and add conditional :class for active state -->
-              <a @click.prevent="tab = 'tab1'" href="#" class="inline-block py-2 font-medium ´ border-b-2 px-6 w-full border-transaprent bg-white text-blue-500 border-blue-500" :class="{ ' bg-white text-blue-500  border-blue-500' : tab === 'tab1' }">
-                Buttons
-              </a>
-            </li>
-            <li class="w-full -mb-px">
-              <a @click.prevent="tab = 'tab2'" href="#" class="inline-block py-2 font-medium ´ border-b-2 px-6 w-full border-transaprent" :class="{ ' bg-white text-blue-500  border-blue-500' : tab === 'tab2' }">
-                Check Boxes
-              </a>
-            </li>
-            <li class="w-full -mb-px">
-              <a @click.prevent="tab = 'tab3'" href="#" class="inline-block py-2 font-medium ´ border-b-2 px-6 w-full border-transaprent" :class="{ ' bg-white text-blue-500  border-blue-500' : tab === 'tab3' }">
-                Inputs
-              </a>
-            </li>
-          </ul>
-          <div class="py-4 pt-4 text-left bg-white content">
-            <!-- show tab1 only -->
-            <div x-show="tab==='tab1'" class="text-gray-500" style="">
-              <main>
-                <!-- === Remove and replace with your own content... === -->
-                <div class="py-4">
-                  <span class="inline-flex items-center text-black">
-                    <span class="font-mono text-sm" aria-hidden="true">
-                      01
-                    </span>
-                    <span class="ml-3 h-3.5 w-px bg-black"></span>
-                    <span class="ml-3 text-base font-medium tracking-tight">
-                      Tab content
-                    </span>
-                  </span>
-                  <div class="h-32 border border-gray-200 border-dashed rounded-lg"></div>
-                </div>
-                <!-- === End ===  -->
-              </main>
-            </div>
-            <div x-show="tab==='tab2'" class="text-gray-500" style="display: none;">
-              <main>
-                <!-- === Remove and replace with your own content... === -->
-                <div class="py-4">
-                  <span class="inline-flex items-center text-black">
-                    <span class="font-mono text-sm" aria-hidden="true">
-                      02
-                    </span>
-                    <span class="ml-3 h-3.5 w-px bg-black"></span>
-                    <span class="ml-3 text-base font-medium tracking-tight">
-                      Tab content
-                    </span>
-                  </span>
-                  <div class="h-32 border border-gray-200 border-dashed rounded-lg"></div>
-                </div>
-                <!-- === End ===  -->
-              </main>
-            </div>
-            <div x-show="tab==='tab3'" class="text-gray-500" style="display: none;">
-              <main>
-                <!-- === Remove and replace with your own content... === -->
-                <div class="py-4">
-                  <span class="inline-flex items-center text-black">
-                    <span class="font-mono text-sm" aria-hidden="true">
-                      03
-                    </span>
-                    <span class="ml-3 h-3.5 w-px bg-black"></span>
-                    <span class="ml-3 text-base font-medium tracking-tight">
-                      Tab content
-                    </span>
-                  </span>
-                  <div class="h-32 border border-gray-200 border-dashed rounded-lg"></div>
-                </div>
-                <!-- === End ===  -->
-              </main>
-            </div>
+  <div class="items-center ">
+    <div class="justify-center w-full">
+      <div x-data="{ tab: 'tab1' }">
+        <ul class="flex justify-between mx-auto overflow-hidden text-sm text-center bg-[#202020] text-white border divide-x rounded-md">
+          <li class="w-full">
+            <!-- event handler set state to 'tab1' and add conditional :class for active state -->
+            <a @click.prevent="tab = 'tab1'" href="#" class="inline-block w-full px-6 py-2 font-medium text-black bg-white border-b-2 border-transparent border-black" :class="{ ' bg-white text-black  border-black' : tab === 'tab1' }">
+              UX/UI Design
+            </a>
+          </li>
+          <li class="w-full">
+            <a @click.prevent="tab = 'tab2'" href="#" class="inline-block w-full px-6 py-2 font-medium border-b-2 border-transparent" :class="{ ' bg-white text-black  border-black' : tab === 'tab2' }">
+              Website Development
+            </a>
+          </li>
+          <li class="w-full">
+            <a @click.prevent="tab = 'tab3'" href="#" class="inline-block w-full px-6 py-2 font-medium border-b-2 border-transparent" :class="{ ' bg-white text-black  border-black' : tab === 'tab3' }">
+              Logo & Branding
+            </a>
+          </li>
+        </ul>
+        <div class="py-4 pt-4">
+          <!-- show tab1 only -->
+          <div x-show="tab==='tab1'" >
+            <main>
+              <CardGrid tag={"ui"} />
+            </main>
+          </div>
+          <div x-show="tab==='tab2'">
+            <main>
+              <CardGrid tag={"website"} />
+            </main>
+          </div>
+          <div x-show="tab==='tab3'">
+            <main>
+              <CardGrid tag={"logo"} />
+            </main>
           </div>
         </div>
       </div>
     </div>
-  </section>            
+  </div>
+</section>            

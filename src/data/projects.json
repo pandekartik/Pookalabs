@@ -1,71 +1,91 @@
 [
       {
+        "heading": "Neutron Money",
+        "body": "Webflow Landing page for a fintech startup.",
+        "imageUrl": "neutronweb",
+        "url" : "https://www.neutron.money/",
+        "tags": ["website", "featured"]
+      },
+      {
         "heading": "Swapnil Patni Classes",
         "body": "Website design and development for local coaching classes.",
         "imageUrl": "spc",
-        "url" : "https://www.swapnilpatni.com/"
+        "url" : "https://www.swapnilpatni.com/",
+        "tags": ["website", "featured"]
       },
       {
         "heading": "BagAChat",
-        "body": "Website design and development for Startup.",
+        "body": "Wordpress Website design and development for Startup.",
         "imageUrl": "bagachat",
-        "url" : "https://bagachat.com/"
+        "url" : "https://bagachat.com/",
+        "tags": ["website", "featured"]
       },
       {
         "heading": "The Socialicious",
         "body": "Website design and development for a Dubai based Digital Agency.",
         "imageUrl": "socialicious",
-        "url" : "https://www.thesocialicious.com/"
+        "url" : "https://www.thesocialicious.com/",
+        "tags": ["website"]
       },
       {
         "heading": "Umesh Chopkar",
         "body": "Website design and development for a Insurance Agent.",
         "imageUrl": "umesh",
-        "url" : "https://pandekartik.github.io/www.umeshchopkar.com/"
+        "url" : "https://pandekartik.github.io/www.umeshchopkar.com/",
+        "tags": ["website"]
       },
       {
         "heading": "Folia",
         "body": "Logo design for an online plants shop",
-        "imageUrl": "folia"
+        "imageUrl": "folia",
+        "tags": ["logo", "featured"]
       },
       {
         "heading": "Fresh Squeeze",
         "body": "Logo design for an organic cold press juice brand",
-        "imageUrl": "fresh"
+        "imageUrl": "fresh",
+        "tags": ["logo", "featured"]
       },
       {
         "heading": "MD Stoneimpex",
         "body": "Logo design for a European importer",
-        "imageUrl": "md"
+        "imageUrl": "md",
+        "tags": ["logo"]
       },
       {
         "heading": "Oliver Ceramic",
         "body": "Logo design for a local creamic store",
-        "imageUrl": "oliver"
+        "imageUrl": "oliver",
+        "tags": ["logo"]
       },
       {
         "heading": "Next Door Properties",
         "body": "Logo design for US real eastate firm",
-        "imageUrl": "nextdoor"
+        "imageUrl": "nextdoor",
+        "tags": ["logo"]
       },
       {
         "heading": "Nuvora",
         "body": "Logo design for a fashion brand",
-        "imageUrl": "nuvora"
+        "imageUrl": "nuvora",
+        "tags": ["logo"]
       },
       {
         "heading": "Renaissance Derma",
         "body": "Logo design for a local dermatology clinic",
-        "imageUrl": "renaissance"
+        "imageUrl": "renaissance",
+        "tags": ["logo"]
       },
       {
         "heading": "Plums & Carols Logo",
         "body": "Logo design for a side project in christmas",
-        "imageUrl": "plums"
+        "imageUrl": "plums",
+        "tags": ["logo", "featured"]
       },
       {
         "heading": "Plums & Carols Packaging",
         "body": "Branding and Packaging design for a side project in christmas",
-        "imageUrl": "plumbranding"
+        "imageUrl": "plumbranding",
+        "tags": ["logo"]
       }
 ]

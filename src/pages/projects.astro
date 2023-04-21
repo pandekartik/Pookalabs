@@ -1,18 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Cards from "../components/Cards.astro";
-import projects from "../data/projects.json"
+import Accordion from "../components/Accordion.astro";
 ---
 <BaseLayout>
 <!-- projects start -->
 <div class="bg-project-bg bg-no-repeat bg-top bg-cover px-5 py-12 md:px-10 lg:px-20 lg:py-32 ">
     <div class="flex flex-col items-center gap-y-12">
     <h2 class="text-xl lg:text-4xl text-white text-center">Projects</h2>
-    <div class="grid grid-cols-1 gap-x-4 gap-y-8 justify-items-strech items-strech md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project)=>(
-            <Cards heading={project.heading} body={project.body} imageUrl={project.imageUrl} url={project.url} />
-        ))}
-    </div>
+    <Accordion />
     <div class="border-2 border-white text-center px-6 py-2 rounded bg-white text-black w-40 hover:bg-black hover:text-white hover:border ease-in-out duration-300">
         <a href="/contact/" class="pt-16">Get in Touch</a>
     </div>
