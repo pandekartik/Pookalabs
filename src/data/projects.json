@@ -87,5 +87,29 @@
         "body": "Branding and Packaging design for a side project in christmas",
         "imageUrl": "plumbranding",
         "tags": ["logo"]
+      },
+      {
+        "heading": "Doctor Appointment App",
+        "body": "Mobile app UI design for a HealthTech App",
+        "imageUrl": "doc",
+        "tags": ["ui", "featured"]
+      },
+      {
+        "heading": "Folio Collective",
+        "body": "Online plants store Mobile App UI Design",
+        "imageUrl": "plants",
+        "tags": ["ui", "featured"]
+      },
+      {
+        "heading": "Agronomic Chair",
+        "body": "Ecommerce store UI Design",
+        "imageUrl": "chair",
+        "tags": ["ui", "featured"]
+      },
+      {
+        "heading": "Smart Home",
+        "body": "Mobile interface for home IOT network",
+        "imageUrl": "home",
+        "tags": ["ui"]
       }
 ]
